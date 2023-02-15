@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Assignment3
 {
@@ -30,9 +30,12 @@ namespace Assignment3
             //Sorting the dictionary by year
             Console.WriteLine("\nSorted by Year");
             Console.WriteLine("=============");
-            foreach(KeyValuePair<int,string> prime in Primeminister.OrderBy(x => x.Key))
+  
+            var keys_sorted = Primeminister.Keys.ToList();
+            keys_sorted.Sort();
+            foreach(var k in keys_sorted)
             {
-                Console.WriteLine(prime.Key+" "+prime.Value);
+                Console.WriteLine( k+ " "+Primeminister[k]);
             }
             Console.WriteLine("=============");
         }
