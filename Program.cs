@@ -25,7 +25,7 @@ namespace Assignment3
                 Console.WriteLine("No PrimeMinister found");
             }
 
-            //Adding Primeminister of current year
+            //Adding Primeminister of current year in dictionary
             Primeminister[DateTime.Now.Year] = "Narendra Modi";
 
             //Sorting the dictionary by year
